@@ -1,0 +1,10 @@
+# robots.txt per Codice Fratao - R_ft su Vercel
+
+# Permette a tutti gli user-agent (motori di ricerca) di scansionare l'intero sito.
+User-agent: *
+Allow: /
+
+# Specifica l'indirizzo della sitemap, essenziale per l'indicizzazione.
+# Sostituisci [TUO-DOMINIO-PERSONALIZZATO] con l'URL effettivo del tuo sito.
+# (Se usi l'URL vercel, inserisci https://codice-fratao-rft.vercel.app)
+Sitemap: https://[TUO-DOMINIO-PERSONALIZZATO]/sitemap.xml
