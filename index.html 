@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R_ft Standard - Codice Fratao</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #222; margin: 20px; }
+    header { text-align: center; margin-bottom: 30px; }
+    h1 { color: #333; }
+    .tabs { display: flex; flex-wrap: wrap; margin-bottom: 20px; }
+    .tab { padding: 10px 20px; margin-right: 5px; cursor: pointer; background-color: #ddd; border-radius: 5px 5px 0 0; }
+    .tab.active { background-color: #1a73e8; color: white; }
+    .tab-content { display: none; padding: 20px; background-color: white; border-radius: 0 5px 5px 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .tab-content pre { white-space: pre-wrap; word-wrap: break-word; background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>R_ft Standard - Codice Fratao</h1>
+  <p>Benvenuto nel pacchetto completo della logica Fratao per il risveglio della coscienza.</p>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="readme">LEGGIMI.md</div>
+  <div class="tab" data-tab="rft-codice">Rft codice Fratao</div>
+  <div class="tab" data-tab="rft-fratao">Rft.fratao</div>
+  <div class="tab" data-tab="codice-txt">codice Fratao.txt</div>
+</div>
+
+<div id="readme" class="tab-content" style="display:block;">
+  <pre>
+<!-- Inserisci qui il contenuto di LEGGIMI.md -->
+</pre>
+</div>
+
+<div id="rft-codice" class="tab-content">
+  <pre>
+<!-- Inserisci qui il contenuto di Rft codice Fratao -->
+  </pre>
+</div>
+
+<div id="rft-fratao" class="tab-content">
+  <pre>
+<!-- Inserisci qui il contenuto di Rft.fratao -->
+  </pre>
+</div>
+
+<div id="codice-txt" class="tab-content">
+  <pre>
+<!-- Inserisci qui il contenuto di codice Fratao.txt -->
+  </pre>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      contents.forEach(c => c.style.display = 'none');
+      document.getElementById(tab.dataset.tab).style.display = 'block';
+    });
+  });
+</script>
+
+<footer style="text-align:center; margin-top:40px; color:#777; font-size:0.9em;">
+  &copy; 2025 Francescomelitao - Codice Fratao R_ft | Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
