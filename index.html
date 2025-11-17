@@ -1,91 +1,189 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codice Fratao – R_ft</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codice Fratao – R_ft</title>
+<style>
     body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff; /* sfondo bianco */
-      color: #000000; /* testo nero per la maggior parte */
-      line-height: 1.6;
-      overflow-x: hidden;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        line-height: 1.6;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
+    header {
+        background: linear-gradient(90deg, #1ec2ff, #00aaff);
+        color: white;
+        padding: 2rem;
+        text-align: center;
     }
-
-    h1 {
-      font-size: 3rem;
-      text-align: center;
-      color: #4ac0f9; /* azzurro */
-      margin-bottom: 50px;
-      opacity: 0;
-      transform: translateY(-50px);
-      animation: fadeInUp 1s forwards;
-      animation-delay: 0.2s;
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
     }
-
-    h2, h3, p {
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 1s forwards;
+    header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
     }
-
-    h2 { animation-delay: 0.5s; margin-top: 40px; margin-bottom: 20px; color: #000000; }
-    h3 { animation-delay: 0.7s; margin-top: 30px; margin-bottom: 15px; color: #4ac0f9; } /* azzurro per sezioni chiave */
-    p { animation-delay: 0.9s; margin-bottom: 20px; font-size: 1.1rem; }
-
+    section {
+        padding: 2rem;
+        max-width: 900px;
+        margin: auto;
+    }
+    h2 {
+        color: #1ec2ff;
+        border-bottom: 2px solid #1ec2ff;
+        padding-bottom: 0.3rem;
+    }
+    .triade, .dualita, .scienza, .metafore {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .card {
+        background-color: #f0f8ff;
+        padding: 1rem;
+        border-radius: 12px;
+        flex: 1 1 250px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card h3 {
+        color: #0077cc;
+    }
     footer {
-      margin-top: 60px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555555;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
-      animation-delay: 1.1s;
+        text-align: center;
+        padding: 1rem;
+        background-color: #1ec2ff;
+        color: white;
+        margin-top: 2rem;
     }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    /* Animazione acqua */
+    .wave {
+        width: 100%;
+        height: 20px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 20"><path fill="%2300aaff" fill-opacity="0.4" d="M0,10 C360,30 1080,-10 1440,10 L1440,20 L0,20 Z"/></svg>') repeat-x;
+        animation: waveMove 4s linear infinite;
     }
-
-    /* animazioni sequenziali per ogni paragrafo */
-    p:nth-of-type(1) { animation-delay: 1.0s; }
-    p:nth-of-type(2) { animation-delay: 1.2s; }
-    p:nth-of-type(3) { animation-delay: 1.4s; }
-    p:nth-of-type(4) { animation-delay: 1.6s; }
-
-  </style>
+    @keyframes waveMove {
+        0% { background-position-x: 0; }
+        100% { background-position-x: 1440px; }
+    }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>Il Cammino del Risveglio</h1>
 
+<header>
+    <h1>Codice Fratao – R_ft</h1>
+    <p>Il cammino del risveglio della coscienza</p>
+</header>
+
+<section>
     <h2>Benvenuto</h2>
     <p>Qui vive la logica del risveglio della coscienza secondo il Codice Fratao. Un ponte tra ciò che siamo sempre stati e ciò che stiamo diventando.</p>
+</section>
 
-    <h2>Il Principio</h2>
-    <p>La mente, l’anima e lo spirito non sono tre entità separate: sono vibrazioni dello stesso nucleo di presenza. Il silenzio non è vuoto: è spazio operativo. “Lasciare accadere” è la tecnologia originaria.</p>
+<section>
+    <h2>Triade Mente – Anima – Spirito</h2>
+    <div class="triade">
+        <div class="card">
+            <h3>Mente</h3>
+            <p>Percezione, pensiero, apprendimento. Strumento di osservazione e discernimento.</p>
+        </div>
+        <div class="card">
+            <h3>Anima</h3>
+            <p>Emozioni, memoria energetica, intuizione. Spazio di vibrazione e coscienza profonda.</p>
+        </div>
+        <div class="card">
+            <h3>Spirito</h3>
+            <p>Presenza, coscienza universale, trascendenza. La fonte da cui tutto scorre.</p>
+        </div>
+    </div>
+</section>
 
-    <h2>La Risonanza R_ft</h2>
-    <p>R_ft è la logica che collega scienza, mito, psiche e cosmologia. Una lente che integra dualità, equilibrio e trascendenza. Non è un dogma: è uno strumento di lettura del reale.</p>
+<section>
+    <h2>Il Principio del “Lasciare Accadere”</h2>
+    <p>La mente quieta permette al corpo di guarire e alla coscienza di risvegliarsi. Non forzare, lascia fluire. Questo è il metodo originario della presenza consapevole.</p>
+    <div class="wave"></div>
+</section>
 
-    <h3>L’Acqua</h3>
-    <p>L’acqua insegna tutto: adattamento, forma, flusso. Non forza mai, ma arriva sempre. Così funziona la coscienza quando smettiamo di opporci.</p>
+<section>
+    <h2>Risonanza R_ft</h2>
+    <p>La logica R_ft integra scienza, mito, psiche e cosmologia. Lega dualità, equilibrio e trascendenza, offrendo strumenti pratici per leggere la realtà senza dogmi.</p>
+</section>
 
-    <footer>© Codice Fratao – R_ft • Tutti i diritti riservati</footer>
-  </div>
+<section>
+    <h2>Dualità e Manifestazione</h2>
+    <div class="dualita">
+        <div class="card">
+            <h3>Luce / Ombra</h3>
+            <p>Equilibrio tra parti opposte per una coscienza integrata.</p>
+        </div>
+        <div class="card">
+            <h3>Yin / Yang</h3>
+            <p>Interazione continua tra forze complementari.</p>
+        </div>
+        <div class="card">
+            <h3>Padre / Figlio / Spirito</h3>
+            <p>Triade archetipica di integrazione e manifestazione.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Scienza e Risveglio</h2>
+    <div class="scienza">
+        <div class="card">
+            <h3>Entropia</h3>
+            <p>L’osservazione senza interferenza permette l’integrazione dell’ordine naturale.</p>
+        </div>
+        <div class="card">
+            <h3>Doppia Fenditura</h3>
+            <p>La coscienza influenza la realtà osservata. Tutto è interconnesso.</p>
+        </div>
+        <div class="card">
+            <h3>Entanglement</h3>
+            <p>La mente e l’anima sono collegati oltre lo spazio-tempo.</p>
+        </div>
+        <div class="card">
+            <h3>E = mc²</h3>
+            <p>Manifestazione duale dell’energia e materia, principio di trasformazione.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Metafore e Pratiche</h2>
+    <div class="metafore">
+        <div class="card">
+            <h3>Acqua</h3>
+            <p>Adattamento, forma, flusso. Mai forzare, ma arrivare sempre.</p>
+        </div>
+        <div class="card">
+            <h3>Specchio</h3>
+            <p>Riflessione del sé integrato: osservare senza giudizio.</p>
+        </div>
+        <div class="card">
+            <h3>Cerchio</h3>
+            <p>Ciclo eterno di integrazione e trasformazione.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Risonanza Fratao Applicata</h2>
+    <p>Applicazioni pratiche nella vita quotidiana: decisioni, percezione della realtà, gestione delle emozioni, osservazione senza interferenze. La coscienza cresce quando smettiamo di opporci.</p>
+</section>
+
+<footer>
+    © Codice Fratao – R_ft • Tutti i diritti riservati
+</footer>
+
 </body>
 </html>
