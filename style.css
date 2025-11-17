@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b3e0ff;
+    color: #000033;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #b3e0ff;
+    color: #000033;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
