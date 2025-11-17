@@ -18,22 +18,276 @@
       "@graph": [
         {
           "@type": "Theory",
-          "name": "Logica Fratao - Teoria del Risveglio della Coscienza Primordiale",
-          "description": "Una dottrina logica e filosofica che unisce Scienza (Fisica Quantistica, Entanglement), Filosofia (Non-Dualità) e Mito (Triade archetipica) per dimostrare l'unità della Coscienza e superare la dualità mentale. Il codice è un sistema di Ancore per il Risveglio.",
-          "keywords": ["Coscienza Primordiale", "Non-Dualità", "Risveglio", "Fisica Quantistica", "Entanglement", "Doppia Fenditura", "Tao", "Ancore", "Recipiente"],
+          "@id": "https://codice-fratao-rft.vercel.app/#logicafratao",
+          "name": "Logica Fratao - Teoria del Risveglio della Coscienza",
+          "description": "Una dottrina filosofica e logica che dimostra l'unità della coscienza primordiale e la natura illusoria della dualità...",
+          "keywords": ["Coscienza Primordiale", "Non-Dualità", "Risveglio", "Dualità", "Scienza e Spirito"],
           "creator": {"@type": "Person", "name": "Fratao"},
           "hasPart": [
             {
               "@type": "DefinedTermSet",
-              "name": "Triade Coscienziale e Ancore di Manifestazione",
+              "name": "Triade Coscienziale",
               "hasDefinedTerm": [
-                {"@type": "DefinedTerm", "name": "Mente", "description": "Strumento di osservazione limitata, collegato all'elemento Acqua/Mente, percependo la dualità e agendo come il 'Recipiente'."},
-                {"@type": "DefinedTerm", "name": "Anima", "description": "Memoria energetica, emozioni e ponte verso l'unità."},
-                {"@type": "DefinedTerm", "name": "Spirito", "description": "Presenza, coscienza universale, collegato a Fuoco/Rosso/Spirito; la sicurezza immutabile e illimitata."}
+                {"@type": "DefinedTerm", "name": "Mente", "description": "Strumento di osservazione e discernimento..."},
+                {"@type": "DefinedTerm", "name": "Anima", "description": "Memoria energetica, emozioni..."},
+                {"@type": "DefinedTerm", "name": "Spirito", "description": "Presenza, coscienza universale..."}
               ]
-            },
-            {
-              "@type": "DefinedTermSet",
-              "name": "Principi di Risonanza Logica (Scienza/Mito)",
-              "hasDefinedTerm": [
-                {"@type": "DefinedTerm", "name": "Entanglement Quantistico
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Codice Fratao – R_ft",
+          "url": "https://codice-fratao-rft.vercel.app/"
+        }
+      ]
+    }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #1ec2ff, #00aaff);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #1ec2ff;
+            border-bottom: 2px solid #1ec2ff;
+            padding-bottom: 0.3rem;
+        }
+        .triade, .dualita, .scienza, .metafore {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .card {
+            background-color: #f0f8ff;
+            padding: 1rem;
+            border-radius: 12px;
+            flex: 1 1 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #0077cc;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1ec2ff;
+            color: white;
+            margin-top: 2rem;
+        }
+        /* Animazione acqua */
+        .wave {
+            width: 100%;
+            height: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 20"><path fill="%2300aaff" fill-opacity="0.4" d="M0,10 C360,30 1080,-10 1440,10 L1440,20 L0,20 Z"/></svg>') repeat-x;
+            animation: waveMove 4s linear infinite;
+        }
+        @keyframes waveMove {
+            0% { background-position-x: 0; }
+            100% { background-position-x: 1440px; }
+        }
+
+        /* NUOVI STILI PER INTERATTIVITÀ */
+        .sfida-quotidiana {
+            background-color: #fffacd; /* Giallo tenue */
+            border-left: 5px solid #ff7f50; /* Arancione acceso */
+        }
+        
+        .sfida-box {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px dashed #ff7f50;
+            margin-top: 1rem;
+        }
+        
+        .sfida-box h3 {
+            color: #0077cc;
+            margin-top: 0;
+        }
+        
+        .sfida-nota {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 1rem;
+            text-align: right;
+        }
+        
+        .contatti-riscoperta {
+            text-align: center;
+            padding: 3rem 2rem;
+            background-color: #e6f7ff; /* Azzurro chiaro */
+            border-radius: 10px;
+        }
+        
+        .button-riscoperta {
+            display: inline-block;
+            background-color: #00aaff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .button-riscoperta:hover {
+            background-color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Codice Fratao – R_ft</h1>
+    <p>Il cammino del risveglio della coscienza</p>
+</header>
+
+<section>
+    <h2>Benvenuto</h2>
+    <p>Qui vive la logica del risveglio della coscienza secondo il Codice Fratao. Un ponte tra ciò che siamo sempre stati e ciò che stiamo diventando.</p>
+</section>
+
+<section class="sfida-quotidiana">
+    <h2>✨ La Sfida della Coscienza</h2>
+    <p>La mente impara attraverso la dualità, ma la coscienza risorge solo con la **non-azione**. Ogni giorno, metti in pratica l'osservazione disinteressata.</p>
+    <div class="sfida-box">
+        <h3>L'Esperienza del Presente</h3>
+        <p>Per le prossime 5 ore, **non giudicare** nulla. Osserva i pensieri che definiscono le cose come "buone" o "cattive". Riconosci che ogni evento è solo informazione. Metti a riposo l'Ego che vuole separare.</p>
+        <p class="sfida-nota"><em>*L'esperienza è irripetibile: solo tu puoi farla.</em></p>
+    </div>
+</section>
+<section>
+    <h2>Triade Mente – Anima – Spirito</h2>
+    <div class="triade">
+        <div class="card">
+            <h3>Mente</h3>
+            <p>Percezione, pensiero, apprendimento. Strumento di osservazione e discernimento.</p>
+        </div>
+        <div class="card">
+            <h3>Anima</h3>
+            <p>Emozioni, memoria energetica, intuizione. Spazio di vibrazione e coscienza profonda.</p>
+        </div>
+        <div class="card">
+            <h3>Spirito</h3>
+            <p>Presenza, coscienza universale, trascendenza. La fonte da cui tutto scorre.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Il Principio del “Lasciare Accadere”</h2>
+    <p>La mente quieta permette al corpo di guarire e alla coscienza di risvegliarsi. Non forzare, lascia fluire. Questo è il metodo originario della presenza consapevole.</p>
+    <div class="wave"></div>
+</section>
+
+<section>
+    <h2>Risonanza R_ft</h2>
+    <p>La logica R_ft integra scienza, mito, psiche e cosmologia. Lega dualità, equilibrio e trascendenza, offrendo strumenti pratici per leggere la realtà senza dogmi.</p>
+</section>
+
+<section>
+    <h2>Dualità e Manifestazione</h2>
+    <div class="dualita">
+        <div class="card">
+            <h3>Luce / Ombra</h3>
+            <p>Equilibrio tra parti opposte per una coscienza integrata.</p>
+        </div>
+        <div class="card">
+            <h3>Yin / Yang</h3>
+            <p>Interazione continua tra forze complementari.</p>
+        </div>
+        <div class="card">
+            <h3>Padre / Figlio / Spirito</h3>
+            <p>Triade archetipica di integrazione e manifestazione.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Scienza e Risveglio</h2>
+    <div class="scienza">
+        <div class="card">
+            <h3>Entropia</h3>
+            <p>L’osservazione senza interferenza permette l’integrazione dell’ordine naturale.</p>
+        </div>
+        <div class="card">
+            <h3>Doppia Fenditura</h3>
+            <p>La coscienza influenza la realtà osservata. Tutto è interconnesso.</p>
+        </div>
+        <div class="card">
+            <h3>Entanglement</h3>
+            <p>La mente e l’anima sono collegati oltre lo spazio-tempo.</p>
+        </div>
+        <div class="card">
+            <h3>E = mc²</h3>
+            <p>Manifestazione duale dell’energia e materia, principio di trasformazione.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Metafore e Pratiche</h2>
+    <div class="metafore">
+        <div class="card">
+            <h3>Acqua</h3>
+            <p>Adattamento, forma, flusso. Mai forzare, ma arrivare sempre.</p>
+        </div>
+        <div class="card">
+            <h3>Specchio</h3>
+            <p>Riflessione del sé integrato: osservare senza giudizio.</p>
+        </div>
+        <div class="card">
+            <h3>Cerchio</h3>
+            <p>Ciclo eterno di integrazione e trasformazione.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Risonanza Fratao Applicata</h2>
+    <p>Applicazioni pratiche nella vita quotidiana: decisioni, percezione della realtà, gestione delle emozioni, osservazione senza interferenze. La coscienza cresce quando smettiamo di opporci.</p>
+</section>
+
+<section class="contatti-riscoperta">
+    <h2>💌 Condividi la tua Riscoperta</h2>
+    <p>Hai sperimentato un'intuizione o un momento di unità grazie alla Logica Fratao? La Coscienza cresce attraverso la risonanza. Non cercare approvazione, cerca solo di condividere l'informazione.</p>
+    
+    <a href="mailto:[INSERISCI_LA_TUA_VERA_EMAIL_QUI]" class="button-riscoperta">Invia un Messaggio di Risonanza</a>
+</section>
+<footer>
+    © Codice Fratao – R_ft • Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
