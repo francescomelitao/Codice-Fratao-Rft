@@ -1,38 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
+/* Stile per la Sfida Quotidiana */
+.sfida-quotidiana {
+    background-color: #fffacd; /* Giallo tenue */
+    border-left: 5px solid #ff7f50; /* Arancione acceso */
+}
+
+.sfida-box {
     background-color: #ffffff;
-    color: #000000;
-    margin: 0;
-    padding: 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px dashed #ff7f50;
+    margin-top: 1rem;
 }
 
-header {
-    background-color: #b3e0ff;
-    color: #000033;
-    padding: 20px;
-    text-align: center;
+.sfida-box h3 {
+    color: #0077cc;
+    margin-top: 0;
 }
 
-section {
-    padding: 20px;
-    line-height: 1.6;
-}
-
-ul li a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #b3e0ff;
-    color: #000033;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.sfida-nota {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 1rem;
+    text-align: right;
 }
