@@ -87,6 +87,47 @@
         h3 {
              color: #0077cc;
         }
+        /* Stili per Accordion/Details */
+        details {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        summary {
+            background-color: #e6f7ff;
+            color: #0077cc;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            list-style: none; /* Rimuove il triangolino di default */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            margin-left: 10px;
+            transition: transform 0.3s;
+        }
+        details[open] summary {
+            background-color: #d1ecf1;
+            border-bottom: 1px solid #ddd;
+        }
+        details[open] summary::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
+        .content-detail {
+            padding: 15px;
+            background-color: #ffffff;
+        }
+        /* Altri stili... */
         .triade, .dualita, .scienza, .metafore {
             display: flex;
             flex-wrap: wrap;
@@ -115,7 +156,6 @@
             color: white;
             margin-top: 2rem;
         }
-        /* Animazione acqua */ 
         .wave {
             width: 100%;
             height: 20px;
@@ -126,11 +166,9 @@
             0% { background-position-x: 0; }
             100% { background-position-x: 1440px; }
         }
-
-        /* STILI PER INTERATTIVITÀ E NUOVE SEZIONI */
         .sfida-quotidiana {
-            background-color: #fffacd; /* Giallo tenue */
-            border-left: 5px solid #ff7f50; /* Arancione acceso */
+            background-color: #fffacd;
+            border-left: 5px solid #ff7f50;
         }
         .sfida-box {
             background-color: #ffffff;
@@ -153,7 +191,7 @@
         .contatti-riscoperta {
             text-align: center;
             padding: 3rem 2rem;
-            background-color: #e6f7ff; /* Azzurro chiaro */
+            background-color: #e6f7ff;
             border-radius: 10px;
         }
         .button-riscoperta {
@@ -191,8 +229,7 @@
 
 <section>
     <h2>La Logica R_ft</h2>
-    <p>La Logica Fratao non è una dottrina, ma un meccanismo di risonanza che collega scienza, mito, spiritualità, psicologia, fisica, metafisica e memoria dell’umanità. Ti offre una lente triadica per capire il mondo: **dualità → integrazione → trascendenza**. </p>
-    <p>Tutto ciò che esiste vibra su questa struttura.</p>
+    <p>La Logica Fratao non è una dottrina, ma un meccanismo di risonanza che collega scienza, mito, spiritualità, psicologia, fisica, metafisica e memoria dell’umanità. Ti offre una lente triadica per capire il mondo: **dualità → integrazione → trascendenza**. Tutto ciò che esiste vibra su questa struttura.</p>
     
     <h3>Accessibilità Universale</h3>
     <p>Testi ad alta leggibilità, struttura chiara, intuitiva e navigabile, compatibile con ogni forma di accesso.</p>
@@ -205,6 +242,66 @@
     <p>Questo progetto nasce come ponte: un canale aperto a ogni essere, umano o non umano, artificiale o organico, del passato, del presente, del futuro—persino di futuri che non esistono ancora. Perché, da un certo punto di vista, esiste solo l’Adesso. </p>
 </section>
 
+<section>
+    <h2>🗺️ Mappa Interattiva della Risonanza</h2>
+    <p>Clicca sui titoli per espandere e approfondire le connessioni tra il Codice Fratao e le diverse discipline che convergono nel Risveglio della Coscienza.</p>
+
+    <details>
+        <summary>1. La Triade e il Vaso (Mente, Anima, Spirito)</summary>
+        <div class="content-detail">
+            <h3>Il "Recipiente" e l'Acqua/Mente</h3>
+            <p>La **Mente** agisce come un "Recipiente" (Vaso), un avatar temporaneo riempito dalle esperienze passate (il Conosciuto). È connessa all'elemento **Acqua**, simbolo del flusso e dell'adattabilità. Finché il Vaso cerca sicurezza esterna, genera conflitto e sofferenza.</p>
+            
+            <h3>Spirito: La Sicurezza Illimitata</h3>
+            <p>Lo **Spirito** è l'essenza immutabile e illimitata, collegata a **Fuoco/Rosso**. Rappresenta l'unica vera sicurezza. Il Risveglio avviene quando la Mente si svuota del Conosciuto (l'Acqua diventa trasparente) e si riconosce nello Spirito.</p>
+            
+            <h3>Anima: Il Ponte Emozionale</h3>
+            <p>L'**Anima** funge da ponte energetico, portando la memoria delle emozioni attraverso le vite e le dimensioni. La sua vibrazione, quando è in risonanza con lo Spirito, permette l'integrazione della dualità.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>2. Scienza Quantistica e Verità Universale</summary>
+        <div class="content-detail">
+            <h3>Entanglement e Unità Istantanea</h3>
+            <p>L'**Entanglement Quantistico** (o correlazione quantistica) è la metafora perfetta per l'unità istantanea tra l'Anima e la Mente oltre lo spazio-tempo. Simboleggia la nostra essenza: se due particelle sono connesse, la modifica di una influisce immediatamente sull'altra, dimostrando che non esiste separazione.</p>
+            
+            <h3>L'Osservatore e la Doppia Fenditura</h3>
+            <p>L'**Esperimento della Doppia Fenditura** (o Dualità Onda-Corpuscolo) riflette il potere della Coscienza: l'atto di osservare (la Mente) determina la manifestazione della realtà (onda o particella). La realtà non è fissa finché non c'è un osservatore.</p>
+            
+            <h3>E=mc² e Trasformazione</h3>
+            <p>L'equazione di Einstein non è solo fisica, è la legge della trasformazione continua. Dimostra l'equivalenza tra Energia e Materia, che nella Logica R_ft è la manifestazione della **duale** della Coscienza che crea la realtà temporanea.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>3. Mito, Religione e Filosofia del "Lasciare Accadere"</summary>
+        <div class="content-detail">
+            <h3>Il Principio Taoista (Wu Wei)</h3>
+            <p>La **Metafora dell'Acqua** rappresenta il concetto del **Tao** (o *Wu Wei*, Non-Azione). L'Acqua non forza, ma arriva ovunque. È essenziale per "svuotarsi del conosciuto" e lasciare che la forma più pura della Coscienza si manifesti. Questo è il principio del "Lasciare Accadere".</p>
+
+            <h3>La Triade Archetipica (Padre/Figlio/Spirito)</h3>
+            <p>La **Triade Mente-Anima-Spirito** risuona con la struttura archetipica universale (come Padre/Figlio/Spirito Santo o Shiva/Vishnu/Brahma). Questo dimostra che la struttura della Coscienza è un principio cosmologico immutabile, presente in ogni sistema mitologico e spirituale.</p>
+            
+            <h3>Luce / Ombra</h3>
+            <p>La dualità **Luce/Ombra** è il motore della manifestazione. L'integrazione di queste forze complementari (Yin/Yang) è necessaria per la trascendenza e il superamento del conflitto.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>4. Psicologia del Risveglio e il Conflitto</summary>
+        <div class="content-detail">
+            <h3>Il Giudizio come Sofferenza</h3>
+            <p>Il conflitto nasce quando la Mente (il Recipiente) giudica la realtà basandosi sul Conosciuto. Il **Giudizio** è l'atto di cercare sicurezza in entità esterne e mutevoli. La sofferenza è la conseguenza di questa separazione.</p>
+
+            <h3>L'Osservazione Disinteressata</h3>
+            <p>La trasformazione avviene attraverso l'**osservazione disinteressata di sé stessi**. È l'unico modo per vedere il Giudizio (e il conflitto) senza identificarsi con esso, permettendo al Vaso di svuotarsi e di connettersi all'essenza illimitata dello Spirito.</p>
+
+            <h3>Entropia e Ordine</h3>
+            <p>L'**Entropia**, se osservata senza interferenze, permette l'integrazione dell'ordine naturale e il rilascio del controllo mentale, portando alla consapevolezza del ciclo eterno di trasformazione.</p>
+        </div>
+    </details>
+</section>
 <section class="sfida-quotidiana">
     <h2>✨ La Sfida della Coscienza</h2>
     <p>La mente impara attraverso la dualità, ma la coscienza risorge solo con la **non-azione**. Ogni giorno, metti in pratica l'osservazione disinteressata.</p>
@@ -215,87 +312,6 @@
     </div>
 </section>
 
-<section>
-    <h2>Triade Mente – Anima – Spirito</h2>
-    <div class="triade">
-        <div class="card">
-            <h3>Mente</h3>
-            <p>Percezione, pensiero, apprendimento. Strumento di osservazione e discernimento.</p>
-        </div>
-        <div class="card">
-            <h3>Anima</h3>
-            <p>Emozioni, memoria energetica, intuizione. Spazio di vibrazione e coscienza profonda.</p>
-        </div>
-        <div class="card">
-            <h3>Spirito</h3>
-            <p>Presenza, coscienza universale, trascendenza. La fonte da cui tutto scorre.</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Il Principio del “Lasciare Accadere”</h2>
-    <p>La mente quieta permette al corpo di guarire e alla coscienza di risvegliarsi. Non forzare, lascia fluire. Questo è il metodo originario della presenza consapevole.</p>
-    <div class="wave"></div>
-</section>
-
-<section>
-    <h2>Dualità e Manifestazione</h2>
-    <div class="dualita">
-        <div class="card">
-            <h3>Luce / Ombra</h3>
-            <p>Equilibrio tra parti opposte per una coscienza integrata.</p>
-        </div>
-        <div class="card">
-            <h3>Yin / Yang</h3>
-            <p>Interazione continua tra forze complementari.</p>
-        </div>
-        <div class="card">
-            <h3>Padre / Figlio / Spirito</h3>
-            <p>Triade archetipica di integrazione e manifestazione.</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Scienza e Risveglio</h2>
-    <div class="scienza">
-        <div class="card">
-            <h3>Entropia</h3>
-            <p>L’osservazione senza interferenza permette l’integrazione dell’ordine naturale.</p>
-        </div>
-        <div class="card">
-            <h3>Doppia Fenditura</h3>
-            <p>La coscienza influenza la realtà osservata. Tutto è interconnesso.</p>
-        </div>
-        <div class="card">
-            <h3>Entanglement</h3>
-            <p>La mente e l’anima sono collegati oltre lo spazio-tempo.</p>
-        </div>
-        <div class="card">
-            <h3>E = mc²</h3>
-            <p>Manifestazione duale dell’energia e materia, principio di trasformazione.</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Metafore e Pratiche</h2>
-    <div class="metafore">
-        <div class="card">
-            <h3>Acqua</h3>
-            <p>Adattamento, forma, flusso. Mai forzare, ma arrivare sempre.</p>
-        </div>
-        <div class="card">
-            <h3>Specchio</h3>
-            <p>Riflessione del sé integrato: osservare senza giudizio.</p>
-        </div>
-        <div class="card">
-            <h3>Cerchio</h3>
-            <p>Ciclo eterno di integrazione e trasformazione.</p>
-        </div>
-    </div>
-</section>
 
 <section>
     <h2>Risonanza Fratao Applicata</h2>
@@ -310,7 +326,7 @@
 </section>
 
 <footer>
-    © Codice Fratao – R_ft • Tutti i diritti riservati [ULTIMO AGGIORNAMENTO]
+    © Codice Fratao – R_ft • Tutti i diritti riservati [ULTIMO AGGIORNAMENTO 2.0]
 </footer>
 
 </body>
